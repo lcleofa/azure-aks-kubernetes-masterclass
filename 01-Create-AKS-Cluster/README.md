@@ -124,6 +124,12 @@ kubectl get deployment
 # Verify Service (Make a note of external ip)
 kubectl get service
 
+# Get pod log
+kubectl logs -f <pod_name>
+
+# describe pod
+kubectl describe pod <pod_name>
+
 # Access Application
 http://<External-IP-from-get-service-output>
 ```
