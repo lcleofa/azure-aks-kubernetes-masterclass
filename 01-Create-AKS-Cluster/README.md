@@ -130,6 +130,12 @@ kubectl logs -f <pod_name>
 # describe pod
 kubectl describe pod <pod_name>
 
+# get service
+$ kubectl get svc
+NAME                  TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)        AGE
+kubernetes            ClusterIP      10.0.0.1      <none>           443/TCP        140m
+myapp1-loadbalancer   LoadBalancer   10.0.21.219   20.126.189.241   80:30435/TCP   11m
+
 # Access Application
 http://<External-IP-from-get-service-output>
 ```
